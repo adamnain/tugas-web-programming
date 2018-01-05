@@ -1,326 +1,121 @@
-*{
-	margin: 0px;
-	padding: 0px;
-	border: 0px;
+h1, h2, h3, h4, h5, h6, p, a{
 	font-family: ubuntu, calibri;
 }
+
 @font-face{
 	font-family: ubuntu;
 	src: url(ubuntu.ttf);
 }
-
-.clear{
-	clear: both;
+.clear {clear:both}
+body{
+	margin: 0px;
+	background: #FFFFFF;
 }
-/*================> header <==================*/
-header{
-	position: fixed;
-	width: 100%;
-	background-color: #64B5F6;
-	height: 100px;
-	border-bottom: 3px solid #1976D2;
-	z-index: 1000;
-	opacity: .9;
-}
-#logo{
-	padding: 10px;
-	margin-left: 20px;
-	float: left;
-}
-nav {
-	float: right;
-	margin-top: 40px; 
-	margin-right: 40px;
-}
-nav ul li{
-	display: inline-block;
-	float: right;
-}
-nav ul li a{
-	text-decoration: none;
-	color: #fff;
+header h1{
 	text-align: center;
-	padding: 10px;
+	font-size: 300%;
 }
-nav ul li a:hover{
-	text-decoration: none;
-	color: #fff;
-	background-color: #1976D2;
-	border-radius: 5px;
+header h1:hover{
+	transform: rotate(20deg);
+	color: #FFCA28;
+	transition-duration: 2s;
 }
-
-/*================> end of header <==================*/
-
-/*================> slider <==================*/
-#slider img{
-	position: relative;
-	width: 100%;
-	height: 700px;
-	z-index: -1;
-}
-.bxslider h2{
-	text-align: center;
-	margin-top: -90px;
-	color: #fff;
-	background-color: #000;
-	opacity: .7;
-	padding: 30px;
-
-}
-/*================> end of slider <==================*/
-
-/*================> fitur <==================*/
-#wrapper-fitur{
-	width: 100%;
-	position: relative;
-}
-.fitur{
-	text-align: center;
-	width: 25%;
-	float: left;
-	height: 275px;
-}
-
-.fitur img{
-	height: 150px;
-	width: 150px;
+/*=======================> navbar <=======================*/
+nav{
+	border-bottom: 2px solid #FFECB3;
 	margin-bottom: 20px;
 }
-.fitur h4{
-	color: #757575;
+nav ul {
+	list-style-type: none;
+	display: inline-block;
 }
-.fitur a{
-	text-decoration: none;
-	color: #000;
-}
-.fitur a:hover{
-	text-decoration: none;
-	color: #F44336;
-
-}
-
-/*================> end of fitur <==================*/
-
-/*================> section join <==================*/
-#join{
-	background-color: #0D47A1;
-	color: #fff;
-	height: 300px;
-	position: relative;
-}
-#join h1{
-	position: absolute;
-	margin-top: 70px;
-	text-align: center;
-	width: 100%;
-	font-size: 200%;
-}
-#join h3{
-	position: absolute;
-	margin-top: 120px;
-	text-align: center;
-	width: 100%;
-}
-.btjoin{
-	position: absolute;
-	margin-top: 180px;
-	text-align: center;
-	width: 100%;
-}
-.btjoin a{
-	background-color:#BBDEFB;
-	padding:20px 40px;
-	text-decoration: none;
-	color: #000;
-	border-radius: 50px;
-	border: 2px solid #fff;
-	text-decoration-style: bold;
-}
-.btjoin a:hover{
-	background-color:#2196F3;
-	padding:20px 40px;
-	text-decoration: none;
-	color: #fff;
-	border-radius: 50px;
-	border: 2px solid #fff;
-	text-decoration-style: bold;
-}
-/*================> end of section join <==================*/
-
-/*================> content <==================*/
-#wrapper-content{
-	width: 100%;
-	height: 600px;
-	background-color: #E3F2FD;
-}
-/*================> article <==================*/
-#wrapper-article{
-	width: 75%;
+nav li{
 	float: left;
+	padding: 0px 40px;
+	border-right: 3px solid #FFCA28;
 }
-aside{
-	width: 25%;
-	float: left;
+nav li:last-child {
+    border-right: none;
 }
-article{
-	margin: 30px;
-}
-
-.isi{
-	background-color: #fff;
-	float: left;
-	width: 350px;
-	height: 468px;
-	margin: 30px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.isi h3{
-	padding: 10px;
-}
-.isi p{
-	padding: 10px;
-}
-.isi a{
+nav li a {
+	color: #616161;
+	display: block;
 	text-decoration: none;
-	color: #fff;
-	background-color: #F44336;
-	border-radius: 20px;
-	padding: 10px;
-	float: right;
 }
-
-.isi img{
-	width: 350px;
-	height: 200px;
-
+a:hover{
+	color: #FF8F00;
 }
-article h2{
-	color: #0D47A1;
+nav{
+	text-align: center;
 }
-/*================> end of article <==================*/
-/*================> sidebar <==================*/
-#pengumuman{
-	background-color: #fff;
-	height: 300px;
+/*=======================> main <=======================*/
+#main{
+	padding-top: 50px;
 }
-#pengumuman h2{
-	padding: 30px 20px;
-	color: #0D47A1;
-}
-#pengumuman ul{
-	margin-left: 40px;
-}
-#pengumuman ul li{
-	margin-bottom:  10px;
-}
-#pengumuman ul li a{
-	text-decoration: none;
-	color: #F44336;
-	padding-bottom: 20px;
-}
-#laporan{
-	height: 300px;
-	background-color: #424242;
-}
-#laporan h3{
-	color: #fff;
-	font-size: 200%;
-	padding: 20px;
-}
-.btlapor {
+#main img{
 	margin-top: 20px;
-	text-align: center;
-
-}
-.btlapor a{
-	text-decoration: none;
-	text-align: center;
-	color: #fff;
-	padding: 20px 80px;
-	background-color: #F44336;
-	border-radius: 50px;
-	border: 2px solid #fff;
-}
-.btlapor a:hover{
-	text-decoration: none;
-	text-align: center;
-	color: #fff;
-	padding: 20px 80px;
-	background-color: #DD2C00;
-	border-radius: 50px;
-	border: 2px solid #fff;
-}
-
-/*================> end of sidebar <==================*/
-/*================> end of content <==================*/
-
-/*================> widget bottom <==================*/
-#widget-bottom{
-	width: 100%;
+	margin-left: 100px;
+	float: left;
+	width: 300px;
 	height: 300px;
-	background-color: #212121;
-	color: #fff;
+	border-radius: 50%; 
 }
-.widget-content{
-	width: 33.3%;
-	float: left; 
-}
-.widget-content h2{
-	margin-top: 10px;
-	margin-bottom: 10px;
-	text-align: center;
-}
-.widget-content p{
-	padding: 30px;
-	text-align: center;
-}
-.widget-content ul{
+#pesan{
 	margin-left: 40px;
+	float: left;
 }
-.widget-content ul li{
-	margin-bottom:  10px;
+/*=======================> quote<=======================*/
+#quote{
+	margin: 50px 0px;
+	background: #FFE57F;
+	width: 100%;
+	height: 200px;
 }
-.widget-content ul li a{
-	text-decoration: none;
-	color: #F44336;
-	padding-bottom: 20px;
+#quote h2{
+	padding-top: 50px;
+	text-align: center;
+	color: #424242;
 }
-#logokabinet{
+#quote h3{
+	text-align: center;
+	color: #616161;
+}
+/*=======================> contact<=======================*/
+#contact{
+	margin-top: 80px;
+	margin-bottom: 80px;
 	text-align: center;
 }
-.widget-content img{
-	width: 100px;
-	height: 150px;
+#contact a{
+	background-color: #FFECB3;
+	border-radius: 15px;
+    border: none;
+    color: #000000;
+    padding: 30px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
 }
-#iconsosmed{
-	text-align: center;
-	margin-top: 70px;
+#contact a:hover{
+	background-color: #FFB300;
+	border-radius: 15px;
+    border: none;
+    color: #ffffff;
+    padding: 30px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
 }
-.fa {
-  font-size: 256%;
-  width: 40px;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-}
-.fa:hover {
-    opacity: 0.7;
-}
-
-/*================> end of widget bottom <==================*/
-
-/*================> footer <==================*/
+/*=======================> footer <=======================*/
 footer{
 	text-align: center;
-	background-color: #424242;
-	color: #fff;
-	margin: 0px;
-	padding:10px;
+	border-top: 2px solid #FFECB3;
+	margin-top: 20px;
 }
-footer a{
-	text-align: center;
-	color: #81D4FA;
-	margin: 0px;
-	text-decoration: none;
+footer p{
+	color: #616161;
 }
-/*================> end of footer <==================*/
